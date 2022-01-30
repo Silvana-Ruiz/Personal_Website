@@ -84,7 +84,7 @@ h3 {
   justify-content: center;
   margin-top: 5rem;
   margin-bottom: 1rem;
-  margin-right: 2rem;
+  
 }
 
 .skills-title h2 {
@@ -229,17 +229,59 @@ h3 {
 }
 
 .content-skills {
- 
-  
   color: rgb(80, 72, 72);
-  justify-content:center;
   text-align: center;
   font-size: 1.8rem;
+  justify-content: center;
 }
 
 .content-skills p {
   text-align: justify;
   margin: 2rem;
+}
+
+/*Email Form*/
+.form {
+  background-color: var(--grey);
+  
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/*Deletes the border around the form*/
+.form fieldset {
+  border: none;
+}
+
+.form legend {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.fields-container  {
+  
+}
+
+.fields {
+  margin-bottom: 1rem;
+}
+
+.fields label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.fields input[type="text"] {
+  
+
+
+
+
+  
 }
 
 /*
