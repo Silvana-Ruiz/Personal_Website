@@ -144,38 +144,42 @@
 
     <section>
       <h2 class="title-h2">Contact Information</h2>
-      <form>
+      <form class="form">
         <fieldset>
           <legend>Email me</legend>
+          <div class="fields-container">
+            <div class="fields">
+              <label>Name</label>
+              <input type="text" placeholder="Name" />
+            </div>
 
-          <div>
-            <label>Name</label>
-            <input type="text" placeholder="Name" />
-          </div>
+            <div class="fields">
+              <label>Last Name</label>
+              <input type="text" placeholder="Last Name" />
+            </div>
 
-          <div>
-            <label>Last Name</label>
-            <input type="text" placeholder="Last Name" />
-          </div>
+            <div class="fields">
+              <label>Email</label>
+              <input type="email" placeholder="Email" />
+            </div>
 
-          <div>
-            <label>Email</label>
-            <input type="email" placeholder="Email" />
-          </div>
+            <div class="fields">
+              <label>Message</label>
+              <textarea></textarea>
+            </div>
 
-          <div>
-            <label>Message</label>
-            <textarea></textarea>
-          </div>
+            <div class="fields">
+              <button type="submit">Send</button>
+            </div>
+          </div> <!-- Fields Container-->
 
-          <div>
-            <button type="submit">Send</button>
-          </div>
         </fieldset>
       </form>
+
     </section>
     <footer>
       <p>All rights reserved. Silvana Ruiz</p>
     </footer>
+
   </body>
 </html>
