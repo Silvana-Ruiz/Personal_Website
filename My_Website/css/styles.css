@@ -29,8 +29,9 @@ html {
 }
 
 /*Scroll Snaps*/
-.skills,
 .title,
+.about-me,
+.skills,
 .form,
 .footer {
   scroll-snap-align: center;
@@ -216,6 +217,43 @@ h2 {
 .content-topImg a:active {
   text-align: center;
   background-color: var(--greenblue);
+}
+
+.about-me img {
+  max-width: 90%;
+  height: 400px;
+}
+
+/*About me*/
+@media (min-width: 768px) {
+  /*
+  .about-me-content{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+    margin-right: 20rem;
+    margin-left: 20rem;
+    
+    
+  }
+  .about-me-content img{
+    margin-left: 20rem;
+    
+    
+  }
+  .about-me-content p{
+    margin-top: 10rem;
+    align-items: center;
+    
+    
+  }
+  */
+  .about-me-content{
+    display: flex;
+    
+    
+    
+  
 }
 
 /* Skills*/

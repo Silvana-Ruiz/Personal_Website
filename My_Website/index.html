@@ -22,8 +22,8 @@
 
     <div class="nav-background">
       <nav class="menu container">
-        <a href="#">Profile</a>
-        <a href="#">My Skills</a>
+        <a href="#">About me</a>
+        <a href="#mySkills">My Skills</a>
         <a href="#">Experience</a>
         <a href="#">Contact</a>
       </nav>
@@ -35,13 +35,30 @@
         <h2>Computer Science Student</h2>
         <p>2020 - 2024</p>
         <p>Passionate about Technology, Women in STEM, and Design.</p>
-        <a class="button" onclick="window.open('Silvana_Ruiz.pdf')">Download CV</a>
+        <a class="button" onclick="window.open('Silvana_Ruiz.pdf')"
+          >Download CV</a
+        >
       </div>
+    </section>
+
+    <section class="about-me">
+      <h2 class="title-h2">About me</h2>
+        <div class="about-me-content">
+          <img src="../img/me.jpg" alt="myself">
+          <p>
+            Hello! I am Silvana Ruiz, a Computer Science and Technology student at
+            Tec de Monterrey. Currently, I am working with C++, Python, R, HTML,
+            and CSS. I am interested in learning more about software development,
+            web development, machine learning, and artificial intelligence. I would
+            love to collaborate in the solution of problems that people encounter
+            everyday through the usage of technology.
+          </p>
+        </div>
     </section>
 
     <main>
       <!-- Skills-->
-      <section class="skills">
+      <section class="skills" id="mySkills">
         <div class="skills-title">
           <h2 class="title-h2">My Skills</h2>
         </div>
@@ -173,13 +190,12 @@
               <label>Message</label>
               <textarea class="input-text"></textarea>
             </div>
-
-          </div> <!-- Fields Container-->
+          </div>
+          <!-- Fields Container-->
 
           <div class="align-right flex">
             <button class="button w-100" type="submit">Send</button>
           </div>
-          
         </fieldset>
       </form>
     </section>
@@ -187,6 +203,5 @@
     <footer class="footer">
       <p>All rights reserved. Silvana Ruiz</p>
     </footer>
-
   </body>
 </html>
