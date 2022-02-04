@@ -217,16 +217,26 @@ h2 {
 /*About me*/
 .about-me-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-}
+}  
+
 
 .about-me-content img {
-  max-width:  auto;
-  margin: 0;
-  
+  margin:0 auto; /*Centers the image in mobile devices*/
+  margin-bottom:2rem;
 
+  /*Appearance of the image*/
+  border-radius: 1rem;
+  box-shadow:
+    2.1px 2.5px 5.4px rgba(0, 0, 0, 0.025),
+    5.4px 6.3px 13.7px rgba(0, 0, 0, 0.032),
+    11px 12.9px 28px rgba(0, 0, 0, 0.038),
+    22.6px 26.6px 57.7px rgba(0, 0, 0, 0.051),
+    62px 73px 158px rgba(0, 0, 0, 0.1)
+  ;
 }
+
 .about-me-content p {
   /*Text position and details*/
   font-size: 1.9rem;
@@ -244,14 +254,28 @@ h2 {
   ;
   border-radius: 1rem;
   background-color: var(--grey);
-
+  max-width: 90%; 
   /*Text box position*/
-  max-width: 50%; 
   margin: 0; 
-  margin-left: 2rem; /*To separate the image from the text bubble*/
   height: auto; /*Makes the height of the text box exactly the size of the text*/
   align-self: center; /*Aligns vertically items in a flexbox with row flex-direction*/
+}
+
+
+@media (min-width: 768px){
+  .about-me-content {
   
+    flex-direction: row;
+    
+  }  
+  .about-me-content p {
+    margin-left: 2rem; /*To separate the image from the text bubble*/
+    max-width: 50%; 
+  }
+  .about-me-content img {
+    max-width: auto;
+    margin: 0;
+  }
 }
 
 /* Skills*/
