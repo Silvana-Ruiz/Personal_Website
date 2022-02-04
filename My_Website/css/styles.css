@@ -249,7 +249,12 @@ h2 {
   }
   */
   .about-me-content{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);	
+    margin-right: 5rem;
+    justify-content: center;
+  }
+    
     
     
     
