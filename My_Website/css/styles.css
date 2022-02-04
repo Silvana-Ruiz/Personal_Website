@@ -223,16 +223,18 @@ h2 {
 
 .about-me-content img {
   max-width:  auto;
-  margin: 0 auto;
- 
+  margin: 0;
+  
+
 }
 .about-me-content p {
+  /*Text position and details*/
   font-size: 1.9rem;
   text-align: justify;
   margin-top: 3rem;
-  
   padding: 2rem;
   
+  /*Aspect of the text box*/
   box-shadow:
     2.1px 2.5px 5.4px rgba(0, 0, 0, 0.025),
     5.4px 6.3px 13.7px rgba(0, 0, 0, 0.032),
@@ -243,9 +245,13 @@ h2 {
   border-radius: 1rem;
   background-color: var(--grey);
 
+  /*Text box position*/
   max-width: 50%; 
-  margin: 0 auto;
-  height: 200px;    
+  margin: 0; 
+  margin-left: 2rem; /*To separate the image from the text bubble*/
+  height: auto; /*Makes the height of the text box exactly the size of the text*/
+  align-self: center; /*Aligns vertically items in a flexbox with row flex-direction*/
+  
 }
 
 /* Skills*/
