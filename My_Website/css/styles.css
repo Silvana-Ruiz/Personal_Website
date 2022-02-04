@@ -26,9 +26,11 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-snap-type: y mandatory;
+  scroll-behavior:smooth; /*Smooth scroll effect without using javascript*/
 }
 
 /*Scroll Snaps*/
+
 .title,
 .about-me,
 .skills,
@@ -53,14 +55,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 50% 100%;
-  /*
-  background: rgb(119, 154, 218);
-  background: linear-gradient(
-    90deg,
-    rgba(119, 154, 218, 1) 0%,
-    rgba(205, 167, 228, 1) 100%
-  );
-*/
   margin: 0px;
   color: white;
 }
@@ -77,7 +71,7 @@ header {
 .title-h2 {
   font-size: 3rem;
   margin-top: 5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   text-shadow: 2px 2px 3px black;
 }
 
@@ -92,10 +86,6 @@ h3 {
   justify-content: center;
   margin-top: 5rem;
   margin-bottom: 1rem;
-}
-
-.skills-title h2 {
-  margin-bottom: 3rem;
 }
 .container {
   max-width: 120rem;
@@ -225,40 +215,37 @@ h2 {
 }
 
 /*About me*/
-@media (min-width: 768px) {
-  /*
-  .about-me-content{
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: auto;
-    margin-right: 20rem;
-    margin-left: 20rem;
-    
-    
-  }
-  .about-me-content img{
-    margin-left: 20rem;
-    
-    
-  }
-  .about-me-content p{
-    margin-top: 10rem;
-    align-items: center;
-    
-    
-  }
-  */
-  .about-me-content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);	
-    margin-right: 5rem;
-    justify-content: center;
-  }
-    
-    
-    
-    
+.about-me-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-me-content img {
+  max-width:  auto;
+  margin: 0 auto;
+ 
+}
+.about-me-content p {
+  font-size: 1.9rem;
+  text-align: justify;
+  margin-top: 3rem;
   
+  padding: 2rem;
+  
+  box-shadow:
+    2.1px 2.5px 5.4px rgba(0, 0, 0, 0.025),
+    5.4px 6.3px 13.7px rgba(0, 0, 0, 0.032),
+    11px 12.9px 28px rgba(0, 0, 0, 0.038),
+    22.6px 26.6px 57.7px rgba(0, 0, 0, 0.051),
+    62px 73px 158px rgba(0, 0, 0, 0.1)
+  ;
+  border-radius: 1rem;
+  background-color: var(--grey);
+
+  max-width: 50%; 
+  margin: 0 auto;
+  height: 200px;    
 }
 
 /* Skills*/
