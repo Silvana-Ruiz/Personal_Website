@@ -29,11 +29,12 @@ html {
   scroll-behavior:smooth; /*Smooth scroll effect without using javascript*/
 }
 
-/*Scroll Snaps*/
+/**Scroll Snaps**/
 
 .title,
 .about-me,
 .skills,
+.leadership,
 .form,
 .footer {
   scroll-snap-align: center;
@@ -59,7 +60,7 @@ body {
   color: white;
 }
 
-/*Typography*/
+/**Typography**/
 header {
   width: 20 rem; /* 1 rem = 10 px*/
   font-weight: normal;
@@ -131,7 +132,7 @@ h3 {
   justify-content: flex-end;
 }
 
-/*Navigation menu*/
+/**Navigation menu**/
 .nav-background {
   background-color: var(--grey);
 }
@@ -139,6 +140,7 @@ h3 {
 .menu {
   display: flex;
   flex-direction: column;
+  
 }
 
 @media (min-width: 768px) {
@@ -214,7 +216,7 @@ h2 {
   height: 400px;
 }
 
-/*About me*/
+/**About me**/
 .about-me-content {
   display: flex;
   flex-direction: column;
@@ -254,7 +256,7 @@ h2 {
   ;
   border-radius: 1rem;
   background-color: var(--grey);
-  max-width: 90%; 
+  max-width: 70%; 
   /*Text box position*/
   margin: 0; 
   height: auto; /*Makes the height of the text box exactly the size of the text*/
@@ -278,7 +280,7 @@ h2 {
   }
 }
 
-/* Skills*/
+/** Skills**/
 
 @media (min-width: 768px) {
   .content-skills {
@@ -318,7 +320,32 @@ h2 {
   margin: 2rem;
 }
 
-/*Email Form*/
+
+.leadership {
+  color:black;
+  background-color: rgba(255, 255, 255, 0.377);
+  display: flex;
+  flex-direction: column;
+}
+
+.student-groups {
+  display: flex;
+  flex-direction: column;
+}
+
+.awards {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px){
+    .leadership {
+      flex-direction: row;
+
+    }
+}
+
+/**Email Form**/
 .form {
   background-color: var(--grey);
   width: min(60rem, 100%);
