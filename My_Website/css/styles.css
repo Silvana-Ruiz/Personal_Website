@@ -324,9 +324,14 @@ h2 {
 }
 
 
-.leadership {
-  color:black;
+/**LEADERSHIP AND AWARDS**/
+.leadership_Awards {
   background-color: rgba(255, 255, 255, 0.377);
+  color:black;
+
+}
+.leadership {
+  
   display: flex;
   flex-direction: column;
 }
@@ -345,10 +350,11 @@ h2 {
   flex-direction:column;
   justify-content:space-between;
   
+  
 }
 
-.leadership h4 {
- 
+.leadership_Awards {
+  
 }
 
 .student-groups {
@@ -372,11 +378,19 @@ h2 {
   text-align:left;
 }
 
+.awards {
+  margin-right: 5rem;
+}
+
 @media (min-width: 768px){
     .awards {
       margin-left: 5rem;
     }
-    
+    .leadership_Awards {
+      display:flex;
+      flex-direction:row;
+      justify-content: center;
+    }
     
 }
 
