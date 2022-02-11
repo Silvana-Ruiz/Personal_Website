@@ -353,9 +353,7 @@ h2 {
   
 }
 
-.leadership_Awards {
-  
-}
+
 
 .student-groups {
   display: flex;
@@ -380,6 +378,12 @@ h2 {
 
 .awards {
   margin-right: 5rem;
+}
+
+.awardsIcons {
+  display:flex;
+  flex-direction:row;
+  
 }
 
 @media (min-width: 768px){
