@@ -347,7 +347,7 @@ h2 {
 }
 
 .leadership h4 {
- margin-left: 4rem;
+ 
 }
 
 .student-groups {
@@ -363,13 +363,14 @@ h2 {
 
 .student-groups h4 {
   align-self: center;
-  margin-left: 10rem;
+  margin-left:2rem;
+  text-align:left;
 }
 
 @media (min-width: 768px){
     .leadership {
       flex-direction: column;
-      justify-content:center;
+      justify-content:flex-start;
     }
     .awards {
       margin-left: 5rem;
